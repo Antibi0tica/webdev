@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>array</title>
+
+    <script>
+        function putIntoArray() {
+        
+            let question = prompt("Enter a sentence: ");
+
+            var array = question.split(' ');
+
+            array.forEach((word) => {
+            const p = document.createElement("p");
+            p.innerText = word;
+            document.body.appendChild(p)
+            });
+
+            const arrayLength = array.length;
+            const p = document.createElement("p");
+            p.innerText = "The total of items in the array: " + arrayLength;
+            document.body.appendChild(p);
+            
+        }
+    </script>
+</head>
+
+<body onload="putIntoArray()">
+
+</body>
+</html>

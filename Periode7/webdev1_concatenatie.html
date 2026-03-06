@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            concat
+        </title>
+
+        <script>
+
+            function prompts() {
+                let vraag1 = prompt("Eerste getallen")
+
+                if (vraag1 != null) {
+                    let vraag2 = prompt("Tweede getallen")
+                    document.getElementById("demo").innerHTML = vraag1.concat(vraag2)
+                }
+            }
+        </script>
+    </head>
+
+    <body onload="prompts()">
+
+        <p id="demo"></p>
+
+    </body>
+</html>

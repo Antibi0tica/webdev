@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            concat
+        </title>
+
+        <script>
+
+            function prompts() {
+                
+                let vraag1 = prompt("Eerste getal: ");
+
+                if (vraag1 !== null && vraag1 !== "") {
+
+                    let flt_vraag1 = parseFloat(vraag1);
+
+                    let vraag2 = prompt("Tweede getal: ");
+                    
+                    if (vraag2 !== null && vraag2 !== "") {
+
+                        let flt_vraag2 = parseFloat(vraag2);
+
+                        const total = flt_vraag1 + flt_vraag2;
+
+
+                        document.getElementById("demo").innerHTML = "Het getal is: " + total;
+                    }
+
+                    
+                }
+            }
+        </script>
+    </head>
+
+    <body onload="prompts()">
+
+        <p id="demo"></p>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <title>
+            formulieren
+        </title>
+    </head>
+
+    <form>
+        <label for="inputA" name="labelAchternaam">Achternaam</label>
+        <input type="inputA" name="inputAchternaam" placeholder="Achternaam" lenght="30" id="Anaam">
+        <input type="button" value="Aanmelden" onclick="TextboxGevuld(document.getElementById('Anaam'))">
+    </form>
+
+    <script type="text/javascript">
+        function TextboxGevuld(elem) {
+            if (elem.value.length == 0) {
+                alert("Veld SVP invullen");
+                elem.focus();
+            }
+        }
+    </script>
+
+
+</html>

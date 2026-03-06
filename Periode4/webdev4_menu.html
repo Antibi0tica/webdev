@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="les4css.css" type="text/css">
+        <title>
+           JS menu
+        </title>
+
+
+        <script type="text/javascript">
+            function verberg(menu) {
+                var menuStyle = document.getElementById(menu).style;
+                menuStyle.display = "none";
+            }
+
+            function show(menu) {
+                var menuStyle = document.getElementById(menu).style;
+                menuStyle.display  = "block";
+            }
+        </script>
+    </head>
+<body>
+
+    <table cellspacing=0 cellpadding=2>
+    <tr>
+    <td onmouseover="show('Menu1')" onmouseout="verberg('Menu1')"
+    valign=top class=CSSmenu1>Home
+    <div id=Menu1 class=CSSsubmenu1>
+    <a href=http://www.startpagina.nl/>Startpagina's</a><br>
+    <a href=http://www.jansimonminkema.nl/home/gedicht-van-de-maand/26-alle-begin-is-moeilijk>Alle begin is moeilijk</a>
+    </div>
+    </td>
+    <td onmouseover="show('Menu2')" onmouseout="verberg('Menu2')"
+    valign=top class=CSSmenu2>Javascript
+    <div id=Menu2 class=CSSsubmenu2>
+    <a href=http://www.voorbeginners.info/javascript/>JS voor beginners</a><br>
+    <a href=http://javascript.startpagina.nl/>Startpagina Javascript</a><br>
+    <a href=http://www.devguru.com/technologies/javascript/index.asp>DevGuru Javascript Commando's</a>
+</div>
+</td>
+</tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="erica.png" border=2 height=300>
+
+<script type="text/javascript">
+verberg('Menu1');
+verberg('Menu2');
+</script>
+
+</body>
+    
+</html>

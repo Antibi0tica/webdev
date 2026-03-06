@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <title>
+            formulieren
+        </title>
+    </head>
+
+    <form>
+        <label for="inputT" name="labelTel">Telefoonnummer</label>
+        <input type="input" name="inputT" placeholder="Telefoonnummer" lenght="30" id="Tel">
+        <input type="button" value="Aanmelden" onclick="checkLengte(document.getElementById('Tel'))">
+    </form>
+
+    <script type="text/javascript">
+        function checkLengte(elem) {
+            if (elem.value.length != 10) {
+                alert("Voer een geldig Telefoonnummer in");
+                elem.focus();
+            }
+        }
+    </script>
+
+
+</html>
