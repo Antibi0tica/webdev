@@ -8,9 +8,15 @@
                 var images = ['img/back.jpg', 'img/front.jpg']
                 var count = 0;
 
-                setInterval
+                setInterval(rotater,2000);
 
                 function rotater() {
+ 
+                var arrayIndex = count % images.length;
+                count++;
+                console.log(images[arrayIndex]);
+                document.getElementById("banner").src = images[arrayIndex];
+                
                     
                 }
 
@@ -19,7 +25,9 @@
     </head>
 
     <body>
-        <button onclick="bannerRotater()">Klik</button>
+        <button onclick="bannerRotater()">Click</button>
         <img src="" alt="" id="banner" height="250">
     </body>
 </html>
+
+
